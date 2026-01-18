@@ -502,9 +502,113 @@ img {
 
 
 /*=============== CONTACT ===============*/
+.contact__container {
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--gray-color);
+  font-size: 0.9rem;
+}
+
+.contact__item i {
+  color: var(--first-color);
+  font-size: 1.1rem;
+}
+.contact__socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact__socials a {
+  color: var(--first-color);
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.contact__socials a:hover {
+  transform: translateY(-3px);
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+  background: transparent;
+  border: 1px solid var(--first-color);
+  border-radius: 0.6rem;
+  padding: 0.9rem 1rem;
+  color: var(--white-color);
+  font-family: var(--body-font);
+}
+
+.contact__form textarea {
+  height: 140px;
+  resize: none;
+}
+.contact__button {
+  align-self: flex-start;
+  background-color: var(--first-color);
+  color: var(--black-color);
+  padding: 0.7rem 1.6rem;
+  border-radius: 0.6rem;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact__button:hover {
+  opacity: 0.85;
+}
 
 
 /*=============== FOOTER ===============*/
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copy {
+  font-size: 0.85rem;
+  color: var(--gray-color);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__socials a {
+  color: var(--gray-color);
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.footer__socials a:hover {
+  color: var(--first-color);
+  transform: translateY(-2px);
+}
 
 
 /*=============== SCROLL BAR ===============*/
@@ -518,7 +622,12 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
+@media screen and (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 
 /* For medium devices */
 
