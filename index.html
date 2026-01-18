@@ -14,21 +14,23 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Responsive portfolio website Kai - Bedimcode</title>
+    <title>Sekkah portfolio</title>
 </head>
 
 <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">YS</a>
+            <a href="https://www.sekkah.dev" class="nav__logo">YS</a>
 
-            <ul class="nav__menu">
-                <li><a href="#home" class="nav__link active-link">Home</a></li>
-                <li><a href="#about" class="nav__link">About</a></li>
-                <li><a href="#projects" class="nav__link">Projects</a></li>
-                <li><a href="#contact" class="nav__link">Contact</a></li>
-            </ul>
+            <i class="ri-menu-line nav__icon" id="nav-toggle"></i>
+
+            <div class="nav__menu" id="nav-menu">
+                <a href="#home" class="nav__link">Home</a>
+                <a href="#about" class="nav__link">About</a>
+                <a href="#projects" class="nav__link">Projects</a>
+                <a href="#contact" class="nav__link">Contact</a>
+            </div>
 
         </nav>
     </header>
@@ -43,7 +45,8 @@
                 <div class="home__img-wrapper">
                     <!-- Social icons -->
                     <div class="home__social">
-                        <a href="https://www.linkedin.com/in/yassine-sekkah-94747238b/" target="_blank" class="home__social-link">
+                        <a href="https://www.linkedin.com/in/yassine-sekkah-94747238b/" target="_blank"
+                            class="home__social-link">
                             <i class="ri-linkedin-fill"></i>
                         </a>
 
@@ -64,7 +67,9 @@
 
                 <!-- CONTENT -->
                 <div class="home__data">
-                    <span class="home__subtitle">Hi, I'm a <span>Developer</span></span>
+                    <span class="home__subtitle">
+                        Hi, I'm a <span id="typed-text"></span>
+                    </span>
                     <h1 class="home__title">Yassine Sekkah</h1>
 
                     <p class="home__description">
@@ -250,15 +255,17 @@
                 </div>
 
                 <!-- RIGHT SIDE -->
-                <form class="contact__form">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Message" required></textarea>
+                <form id="contact-form" class="contact__form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
 
                     <button type="submit" class="contact__button">
                         Send Message
                     </button>
                 </form>
+                <p class="contact__message" id="contact-message"></p>
+
 
             </div>
         </section>
