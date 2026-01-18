@@ -339,6 +339,23 @@ img {
 
 
 /*=============== BUTTON ===============*/
+.scrollup {
+  position: fixed;
+  right: 1.5rem;
+  bottom: -50%;
+  background-color: var(--first-color);
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  color: var(--black-color);
+  font-size: 1.2rem;
+  z-index: 100;
+  transition: 0.4s;
+}
+
+.show-scroll {
+  bottom: 3rem;
+}
 
 
 /*=============== ABOUT ===============*/

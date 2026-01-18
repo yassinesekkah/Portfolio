@@ -162,6 +162,20 @@ contactForm.addEventListener('submit', function (e) {
   })
 })
 
+/*=============== SCROLL TO TOP ===============*/
+const scrollUp = () => {
+  const scrollUpBtn = document.getElementById('scroll-up')
+
+  if (window.scrollY >= 350) {
+    scrollUpBtn.classList.add('show-scroll')
+  } else {
+    scrollUpBtn.classList.remove('show-scroll')
+  }
+}
+
+window.addEventListener('scroll', scrollUp)
+
+
 
 
 
