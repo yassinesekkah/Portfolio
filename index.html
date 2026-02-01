@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>Sekkah portfolio</title>
+
+    <link rel="preload" as="image" href="assets/img/profile.webp">
+
 </head>
 
 <body>
@@ -61,7 +64,7 @@
 
                     <!-- Profile image -->
                     <div class="home__img">
-                        <img src="assets/img/profile.JPG" alt="profile">
+                        <img src="assets/img/profile.webp" alt="profile" fetchpriority="high">
                     </div>
                 </div>
 
@@ -113,6 +116,7 @@
                         <span>JavaScript</span>
                         <span>Tailwind</span>
                         <span>PHP</span>
+                        <span>Laravel</span>
                         <span>Git</span>
                         <span>GitHub</span>
                         <span>Figma</span>
@@ -156,9 +160,37 @@
             <h2 class="section__title">Recent Projects</h2>
 
             <div class="projects__container container grid">
+                <!--Actra-->
+                <div class="project__card">
+                    <img src="assets/img/actra.webp" alt="Project 1" loading="lazy">
+
+                    <div class="project__overlay">
+                        <h3 class="project__title">Actra</h3>
+
+                        <p class="project__description">
+                            Actra is a productivity-focused task management app that helps users organize tasks,
+                            monitor progress, and stay on track using a clean and intuitive interface.
+                        </p>
+
+                        <p class="project__tech">
+                            Laravel • Blade • Tailwind CSS • Alpine.js • MySQL • Chart.js
+                        </p>
+
+                        <div class="project__buttons">
+                            <a href="https://github.com/yassinesekkah/Actra-Taskboard" target="_blank"
+                                class="project__btn">
+                                Code Source
+                            </a>
+                            <a href="https://actra.sekkah.dev" target="_blank" class="project__btn project__btn--ghost">
+                                Voir Projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <!--JobLink-->
                 <div class="project__card">
-                    <img src="assets/img/joblink_screen.png" alt="Project 1">
+                    <img src="assets/img/joblink_screen.webp" alt="Project 2" loading="lazy">
 
                     <div class="project__overlay">
                         <h3 class="project__title">JobLink</h3>
@@ -186,7 +218,7 @@
                 </div>
                 <!-- Qodex -->
                 <div class="project__card">
-                    <img src="assets/img/qodex.png" alt="Project 1">
+                    <img src="assets/img/qodex.webp" alt="Project 3" loading="lazy">
 
                     <div class="project__overlay">
                         <h3 class="project__title">Qodex Quiz Platform</h3>
@@ -213,7 +245,7 @@
                 </div>
                 <!--Wallet-->
                 <div class="project__card">
-                    <img src="assets/img/wal.png" alt="Project 1">
+                    <img src="assets/img/wal.webp" alt="Project 4" loading="lazy">
 
                     <div class="project__overlay">
                         <h3 class="project__title">Monthly Wallet</h3>

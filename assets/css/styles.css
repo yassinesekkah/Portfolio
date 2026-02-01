@@ -281,11 +281,21 @@ img {
 }
 
 .button {
+  display: inline-flex;
   background-color: #00f7ff;
   color: #0b0f0f;
   padding: 0.75rem 1.8rem;
   border-radius: 0.5rem;
   font-weight: 500;
+  transition: 
+    transform 0.1s ease,
+    box-shadow 0.2s ease,
+    background-color 0.5s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 247, 255, 0.35);
 }
 
 .button--ghost {
@@ -293,6 +303,7 @@ img {
   border: 1px solid #00f7ff;
   color: #00f7ff;
 }
+
 
 .home__img-wrapper {
   position: relative;
